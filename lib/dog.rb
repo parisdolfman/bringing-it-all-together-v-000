@@ -80,7 +80,7 @@ end
 
 def update
   sql = <<-SQL
-    UPDATE dogs SET name = ?, breed = ? WHERE name = ?
+    UPDATE dogs SET name = ?, breed = ?, WHERE name = ?
   SQL
   DB[:conn].execute(sql, self.name, self.breed, self.name)
 end
