@@ -85,6 +85,6 @@ def update
   DB[:conn].execute(sql, self.name, self.breed, self.name)
   end
   save
-end 
+end
 
 end
